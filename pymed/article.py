@@ -29,11 +29,10 @@ class PubMedArticle(object):
     )
 
     def __init__(
-        self: object,
-        xml_element: Optional[TypeVar("Element")] = None,
-        *args: list,
-        **kwargs: dict,
-    ) -> None:
+        self, #: object,
+        xml_element, #: Optional[TypeVar("Element")] = None,
+        *args, #: list,
+        **kwargs): #: dict):
         """ Initialization of the object from XML or from parameters.
         """
 

@@ -137,7 +137,7 @@ class PubMed(object):
         parameters["retmode"] = output
 
         # Make the request to PubMed
-        response = requests.get(f"{BASE_URL}{url}", params=parameters)
+        response = requests.get("%s%s" % (BASE_URL, url), params=parameters)
 
         # Check for any errors
         response.raise_for_status()
